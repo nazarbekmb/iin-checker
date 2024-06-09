@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Person</title>
+    <link rel="stylesheet" href="../web/style.css">
+</head>
+<body>
+    
+
+    <div class="login-box">
+        <h2>Add Person</h2>
+        <form action="/people/info" method="post">
+            <div class="user-box">
+                
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+            </div>
+            
+            <div class="user-box">
+                <label for="iin">IIN:</label><br>
+                <input type="text" id="iin" name="iin"><br>
+            </div>
+            
+            <div class="user-box">
+                <label for="phone">Phone:</label><br>
+                <input type="text" id="phone" name="phone" pattern="\+7\d{3}\d{3}\d{2}\d{2}" placeholder="+7xxxxxxxxxx">
+            </div>
+            <button type="submit">Add Person</button>
+        </form>
+        
+        
+     </div>
+</body>
+</html>
